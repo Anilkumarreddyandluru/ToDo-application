@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>new todo</title>
+<style>
+	.newtodo{
+    background-image: url(./Arts\ and\ culture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px;
+    
+  }
+
+  .todoinner{
+    background-color:rgb(64, 0, 0);
+    width: 50vh;
+    height: 40vh;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px;
+    
+  }
+
+  .newtodo input{
+    padding: 10px 20px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    
+  }
+ 
+
+  .newtodo label{
+    color: rgb(210, 196, 196);
+    font-weight: bold;
+    font-family: sans-serif;
+    display: block;
+    margin-left: 10px;
+    
+  }
+
+  .tododinner form{
+    width: 50%;
+    margin: auto;
+    
+  }
+  .submitbtn{
+  
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    
+   
+  }
+  input:hover {
+    box-shadow: 0 0 10px #00ff00; /* Change the color and size of the glow as needed */
+}
+  .submitbtn:hover{
+	  color:rgb(64, 0, 128);
+	  background-color: rgb(0, 128, 128);
+  }
+  .submit{
+	  padding: 10px;
+	  width: 40%;
+	 
+  }
+  h1{
+	  text-align: center;
+  }
+  body{
+	  background:rgb(0, 0, 0);
+	  color: rgb(255, 128, 128);
+  }
+  .footer{
+    background-color:rgb(128, 0, 0) ;
+    text-align: center;
+    padding: 10px;
+    line-height: 30px;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    position: static;
+  }
+</style>
+
+</head>
+<body>
+	<h1>UPDATE TASK</h1>
+	<div class="newtodo">
+		<div class="todoinner">
+			<form action="updatetask.jsp">
+				
+				<div>
+					<label>Topic</label>
+					<input type="text" placeholder="topic" name="topic">
+				</div>
+				<div>
+					<label>Status</label>
+					<input type="text" placeholder="status" name="status">
+				</div>
+				
+				<div class="submit">
+					<input type="submit" value="update" class="submitbtn">
+				</div>
+			</form >
+			
+		</div>
+		
+	</div>
+	<div class="footer">
+        <p>&copy;All rights reserved - 2023/Anil Reddy</p>
+      </div>
+
+</body>
+</html>
